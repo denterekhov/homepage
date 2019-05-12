@@ -2,10 +2,365 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/stylesheets/base.css">
+    <link rel="stylesheet" href="./assets/stylesheets/starwars-glyphicons.css">
+    <link rel="stylesheet" href="./assets/stylesheets/style.css">
     <title>Résumé</title>
   </head>
   <body>
-    ― Hello World! &#x1F609;
+    <main>
+      <article>
+        <div class="page" style="border-color: midnightblue;">
+          <div class="stackable grid">
+            <div class="row">
+              <div class="three wide center aligned column">
+                <div class="avatar-wrapper">
+                  <object class="avatar" data="./assets/images/avatar.svg" role="img" aria-label="My profile picture"></object>
+                </div>
+              </div>
+              <div class="thirteen wide column">
+                <div class="stackable grid">
+                  <div class="sixteen wide column">
+                    <h1 class="name">Vader, Lord Darth</h1>
+                    <p>Sith Lord and loving father</p>
+                    <ul class="contacts">
+                      <li>
+                        <a href="https://www.facebook.com/dv.is.awesome/">
+                          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#4267b2" d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z"></path></svg>
+                          <span>Darth Vader</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/darthvader">
+                          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#0267b2" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                          <span>@DarthVader</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="mailto:darth.sithlord@empire.com">
+                          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#42ccb2" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
+                          <span>darth.sithlord</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/lorddarthvader">
+                          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#357fd8" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                          <span>lorddarthvader</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="tel:00166601">
+                          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="#fb1" d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path></svg>
+                          <span>Comlink: 001-666-01</span>
+                        </a>
+                      </li>
+                      <li><a href=""><span></span></a></li>
+                    </ul>
+                  </div>
+                  <div class="sixteen wide mobile only column">
+                    <div class="divider"></div>
+                  </div>
+                  <div class="sixteen wide column">
+                    <h2>Résumé</h2>
+                    <p>
+                      &mdash; I am a fearsome Cyborg with experience gained as the supreme commander of the Galactic Empire. I delivered the largest PPP
+                      initiative within the Star Wars universe in partnership with Emperor Palpatine and other key stakeholders to bring the
+                      project in on time and within budget, twice because of that cursed rebellion.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="sixteen wide column">
+                <div class="fat divider"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="ten wide column">
+                <h3>Experience</h3>
+                <ul class="timeline">
+                  <li>    
+                    <p><strong>Commander-in-Chief (Imperial Armed Forces)</strong></p>
+                    <ul>
+                      <li>Exercised direct, total, absolute, irrevocable, and unequivocal command of the Imperial Navy, Army, Marines, and Merchant Marines, comprising over seventeen trillion Imperial military personnel, fifty trillion droid personnel, and an estimated google of civilian adjuncts</li>
+                      <li>Honorary President of Imperial Military Academy of Carida</li>
+                      <li>De Facto Heir to Imperial Throne</li>
+                      <li>Official hot chocolate-maker to His Imperial Majesty the Emperor</li>
+                    </ul>
+                  </li>
+                  <li>    
+                    <p><strong>Personal Assistant (Office of the Galactic Emperor)</strong></p>
+                    <ul>
+                      <li>Personally filled His Imperial Majesty's hot chocolate mug at least fifty times per week</li>
+                      <li>Assumed progressive responsibility for approximately 35% of all Imperial governing decisions, including but not limited to military operations, intelligence agencies, selective elimination of inconvenient persons, environmental disasters, charitable donations, and office supply acquisition for fourteen bureaucratic ministries</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>General Manager (Imperial Jedi Extermination Services)</strong></p>
+                    <ul>
+                      <li>Coordinated and executed the elimination of 10,000+ enemies of the state over the course of two years</li>
+                      <li>Reduced operating costs by 62% through creative cost-cutting measures such as mass executions and use of energy-efficient weaponry</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>Master (Jedi Order)</strong></p>
+                    <ul>
+                      <li>Learned to work with young people to the best of their admittedly limited ability.</li>
+                      <li>Capably dealt with difficult situations such as temper tantrums, teamwork on battlefields, insubordination, "women's issues", etc, etc.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>General (Grand Army of the Republic)</strong></p>
+                    <ul>
+                      <li>Commanded crack infantry and starfighter squadrons in a variety of combat situations against extreme odds</li>
+                      <li>Trained Jedi Padawans in the GAR Accelerated Officer Training Program</li>
+                      <li>Won several dozen critical engagements. What.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>Tea Production Manager (Grand Army of the Republic)</strong></p>
+                    <ul>
+                      <li>Personally filled Obi-Wan Kenobi's teacup up to thirty-one times per standard day</li>
+                      <li>Mastered art of brewing sixty-four varieties of tea efficiently while under fire and orbital bombardment</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>Intern (Office of Senator Padmé Amidala)</strong></p>
+                    <ul>
+                      <li>Studied galactic-level political figures on a highly intimate level</li>
+                      <li>Enjoyed extensive personal involvement in Senator Amidala's work</li>
+                      <li>Capably and creatively met Senator Amidala's miscellaneous needs</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>Shaak Traffic Controller (Naboo Ministry of Nature Preservation)</strong></p>
+                    <ul>
+                      <li>Directed and re-directed large herds of shaak in accordance with the directives of senior Nubian government officials, at great personal risk</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>Caf Acquisition Officer (Jedi Council)</strong></p>
+                    <ul>
+                      <li>Personally filled Mace Windu's caf mug up to twelve times per day</li>
+                      <li>Developed mental agility in order to remember twelve separate caf orders while running down fifty-two flights of stairs to Temple Cafeteria</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>Loss-Prevention Officer (Watto's General Merchandise, Inc.)</strong></p>
+                    <ul>
+                      <li>Processed unusual financial transactions</li>
+                      <li>Defended merchandise against potential theft on a daily basis</li>
+                      <li>Improved knowledge of useful professional skills (gambling, embezzlement, fraud, et al.)</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><strong>Pod Engine Scrubber (Watto's General Merchandise, Inc.)</strong></p>
+                    <ul>
+                      <li>Worked independently to achieve daily quota of repaired engine parts</li>
+                      <li>Provided flexible support to other departments of store as needed</li>
+                    </ul>
+                  </li>
+
+                </ul>
+                <h3>Licenses and certifications</h3>
+                <ol>
+                  <li><strong>Heavy Weapons Operator License;</strong> issued by Imperial Ministry of Licenses: Ordnance, Objects of Non-neutral Intent and Improvised Explosives (IML-OONIIE)</li>
+                  <li><strong>Unconventional Weapons License – Lightsaber;</strong> issued by Imperial Ministry of Non-neutral Objects – Jewel-base Energy Dependent Implements (IMNO-JEDI)</li>
+                  <li><strong>Concealed-Carry License – blaster, pocket knife;</strong> issued by Imperial Ministry of Light Offensive and Defensive Devices (IM-LODeD)</li>
+                  <li><strong>Certified Droid Repairman,</strong> issued by the Reformed Organization of Biomimetic Operating Technologies: Droid Outfitting, Repairs, Calibrations, and Salvage (ROBOT-DORCS)</li>
+                  <li><strong>Astronavigation, Grade IV Space Pilot (Small, Mid, and Large Spacecraft), and Hyperdrive Operation Certifications,</strong> issued by Imperial Ministry of Flight Licensing (IMFLi)</li>
+                  <li><strong>Combat Medic, Paramedic, and Paranormal Medic Certifications;</strong> issued by Galactic Republic Advanced Medical Practice Association (GRAMPA), confirmed by Imperial Ministry of Associated Doctors, Orthopedists, Clinical Technicians, Otolaryngologists, and Receptionists (IM-ADOCTOR)</li>
+                  <li><strong>Podracer Piloting License;</strong> issued by Jabba the Hutt</li>
+                  <li><strong>Master-grade Interrogator Certificate;</strong> issued by Imperial Ministry of Efficient and Violent Interrogation for Libertarians (IM-EVIL)</li>
+                </ol>
+              </div>
+              <div class="six wide column">
+                <section>
+                  <h3>Objectives</h3>
+                  <ul>
+                    <li>Reunite with my children
+                      <i class="swg swg-lukeskywalker swg-lg"></i>
+                      <i class="swg swg-leia-2 swg-lg"></i> 
+                    </li>
+                    <li>Turn Luke to the Dark Side
+                      <i class="swg swg-sith swg-lg"></i> 
+                    </li>
+                    <li>Conquer the galaxy
+                      <i class="swg swg-deathstar-3 swg-lg"></i> 
+                    </li>
+                    <li>Find a stable job
+                      <i class="swg swg-starwars swg-lg"></i> 
+                    </li>
+                  </ul>
+                </section>
+                <section>
+                  <h3>Accomplishments</h3>
+                  <ul>
+                    <li>Featured in Jedi magazine as the Galaxy's most influential Sith Lord.</li>
+                    <li>Voted father of the year by Tatooine Times.</li>
+                    <li>Best look of the month by DarkVogue.</li>
+                  </ul>
+                </section>
+                <section>
+                  <h3 class="skills">Skills</h3>
+                  <div class="skills_container">
+                    <div>TIE Pilot:</div>
+                    <div>
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                    </div>
+                  </div>
+                  <div class="skills_container">
+                    <div>Engineer:</div>
+                    <div>
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5"></i> 
+                      <i class="swg swg-darthvader-5"></i> 
+                    </div>
+                  </div>
+                  <div class="skills_container">
+                    <div>Sith Lord:</div>
+                    <div>
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                    </div>
+                  </div>
+                  <div class="skills_container">
+                    <div>Lightsaber Dueling:</div>
+                    <div>
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5"></i> 
+                    </div>
+                  </div>
+                  <div class="skills_container">
+                    <div>Persuasion:</div>
+                    <div>
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5"></i> 
+                    </div>
+                  </div>
+                  <div class="skills_container">
+                    <div>Maintaining a dark attitude:</div>
+                    <div>
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                      <i class="swg swg-darthvader-5 red"></i> 
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <h3>Education</h3>
+                  <ul class="timeline">
+                    <li>
+                      <div><strong>Sheev Palpatine Institute for Unconventional Force Studies</strong></div>
+                      <ul>
+                        <li>
+                          Training Advisor: <em>E. Palpatine, Sh.M</em>
+                        </li>
+                        <li>
+                          Concentrations in <strong>Advanced Martial Arts, State-Sponsored Violence</strong> and <strong>Dynamic Leadership</strong>
+                        </li>
+                        <li>
+                          Minor in <strong>Strangulation Studies</strong>
+                        </li>
+                        <li>
+                          Curriculum Vitae: <em>ULTRA-CLASSIFIED</em>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div><strong>Republic War College</strong></div>
+                      <ul>
+                        <li>
+                          B.A. <strong>in Tactics and Strategy</strong>
+                        </li>
+                        <li>
+                          Minor in <strong>Astronavigation</strong>
+                        </li>
+                        <li>
+                          Practical Field Study Tours on Geonosis, Kamino, Virujansi, Felucia, and other locations
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div><strong>Jedi Temple: Academy of Holistic Force Studies</strong></div>
+                      <ul>
+                        <li>
+                          Training Advisors: <em>Obi-Wan Kenobi, Jd.M; Yoda, Jd.M; Mace Windu, Jd.M</em>
+                        </li>
+                        <li>
+                          Concentrations in <strong>Martial Arts,</strong> and <strong>Negotiation</strong>
+                        </li>
+                        <li>
+                          Curriculum Vitae: <em>LTS590 (Advanced Djem-So), LTS720 (Competitive Dueling), SPN530 (Orbital Combat I), SPN531 (Orbital Combat II), POS473 (Legislative Theory), DIP564 (Aggressive Negotiations), HUT630 (Exploring Classic Huttese Literature), PHI518 (The Jedi-Sith Conflict), PHI673 (Evaluating Non-Attachment Philosophy and Its Effects), SOC428 (Conflict and Change in Alien Cultures), SOC440 (Interclass-Intraspecies Relationships)</em>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div><strong>Mos Espa Technical Community Training Center</strong></div>
+                      <ul>
+                        <li>
+                          Certificate in <strong>Antiquated Machinery Maintenance</strong> and <strong>Droid Construction</strong>
+                        </li>
+                        <li>
+                          Curriculum Vitae: <em>POD110-PE (Introduction to Podracing), BUS112 (Basics of Bartering), HUT142 (Huttese – Human Dialect), ORS107-CC (Introduction to Outer Rim Studies), PHI103 (Survival of the Fittest), DES114 (Desert Survival Training), GAM321 (Gambling for Amateurs)</em>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </section>
+                <section>
+                  <h3>Interests and hobbies</h3>
+                  <ul>
+                    <li>Long solo flights in hyperspace
+                      <i class="swg swg-tie swg-lg"></i> 
+                    </li>
+                    <li>Superweapon construction
+                      <i class="swg swg-deathstar-2 swg-lg"></i> 
+                    </li>
+                    <li>Terrorizing underlings
+                      <i class="swg swg-trooper-o swg-lg"></i> 
+                    </li>
+                    <li>Brooding
+                      <i class="swg swg-darthvader swg-lg"></i> 
+                    </li>
+                    <li>Stargazing
+                      <i class="swg swg-darthvader-o swg-lg"></i> 
+                    </li>
+                    <li>Rebel hunting
+                      <i class="swg swg-atat swg-lg"></i> 
+                    </li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
   </body>
 </html>
