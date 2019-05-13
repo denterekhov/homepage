@@ -1,5 +1,35 @@
+@font-face {
+  font-family: 'Star Wars';
+  src: url('../fonts/starwars-glyphicons-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .avatar {
   border-radius: 50%;
+}
+
+.objectives > li:before,
+.hobbies_list > li:before {
+  font-family: 'Star Wars';
+  font-size: 1.33333333em;
+  line-height: 1.33333333em;
+}
+
+.objectives > li:nth-of-type(1):before {
+  content: '\f065';
+}
+
+.objectives > li:nth-of-type(2):before {
+  content: '\f00C';
+}
+
+.objectives > li:nth-of-type(3):before {
+  content: '\f01C';
+}
+
+.objectives > li:nth-of-type(4):before {
+  content: '\f000';
 }
 
 .skills_container {
@@ -15,14 +45,39 @@
   width: 35%;
 }
 
-.red {
-  color: #f00;
+.shadow_item {
+  color: #ccc;
+}
+
+.hobbies_list > li:nth-of-type(1):before {
+  content: '\f02E';
+}
+
+.hobbies_list > li:nth-of-type(2):before {
+  content: '\f04E';
+}
+
+.hobbies_list > li:nth-of-type(3):before {
+  content: '\f034';
+}
+
+.hobbies_list > li:nth-of-type(4):before {
+  content: '\f021';
+}
+
+.hobbies_list > li:nth-of-type(5):before {
+  content: '\f035';
+}
+
+.hobbies_list > li:nth-of-type(6):before {
+  content: '\f028';
 }
 
 @media (max-width: 991px) {
 	.skills_container { 
     flex-direction: column;
   }
+
 	.skills_container > div:nth-of-type(1),
 	.skills_container > div:nth-of-type(2) { 
     width: 100%;
@@ -34,10 +89,6 @@
     text-align: center;
   }
 
-  /* .skills {
-    text-align: center;
-  } */
-
 	.skills_container {
     flex-direction: row;
   }
@@ -47,7 +98,6 @@
   }
 
 	.skills_container > div:nth-of-type(2) {
-    /* text-align: right; */
     width: calc(100% - 175px);
   }
 }
